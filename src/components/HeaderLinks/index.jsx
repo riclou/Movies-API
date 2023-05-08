@@ -1,0 +1,13 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import styles from "./HeaderLinks.module.css"
+
+function HeaderLinks({ url, children }) {
+  return (
+    <Link to={url} className={styles.links}>
+        {children}
+    </Link>
+  )
+}
+
+export default HeaderLinks
